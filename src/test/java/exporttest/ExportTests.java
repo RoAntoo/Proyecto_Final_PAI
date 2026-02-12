@@ -26,7 +26,7 @@ class CSVExportTest {
         String csv = new String(bytes, StandardCharsets.UTF_8);
 
         Assertions.assertTrue(csv.startsWith("id;userId;status;amount;createdAt;updatedAt\n"));
-        
+
         Assertions.assertTrue(csv.contains(";PENDING;100.50;"));
     }
 }
